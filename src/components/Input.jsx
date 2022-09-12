@@ -18,7 +18,7 @@ function Input() {
     if (img) {
       const storageRef = ref(storage, uuid());
 
-      const uploadTask = await uploadBytesResumable(storageRef, img);
+      const uploadTask = uploadBytesResumable(storageRef, img);
 
       uploadTask.on(
         (error) => {
